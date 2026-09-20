@@ -5,7 +5,7 @@ usando la API pública de Open-Meteo y guarda cada consulta en una base de datos
 SQLite local.
 
 **Autor:** Bredy Guerra
-**Diplomado de Programación en Python — Universidad Tecnológica de Panamá**
+**Diplomado de Programación en Python — Universidad Politécnica Internacional (UPI Panamá)**
 
 ## Estructura del proyecto
 
