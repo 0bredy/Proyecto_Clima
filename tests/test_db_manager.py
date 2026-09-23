@@ -13,7 +13,7 @@ class TestDbManager(unittest.TestCase):
 
     def setUp(self):
         # Cada prueba corre contra una base de datos temporal, no contra clima.db
-        self.carpeta_temporal = tempfile.TemporaryDirectory()
+        self.carpeta_temporal = tempfile.TemporaryDirectory(ignore_cleanup_errors=True)
         db_manager.CARPETA_DATOS = Path(self.carpeta_temporal.name)
         db_manager.RUTA_BD = Path(self.carpeta_temporal.name) / "prueba.db"
         db_manager.crear_base_datos()
